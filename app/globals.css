@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* DCP Crimson/Maroon */
+  --color-crimson: #8B1A1A;
+  --color-crimson-dark: #6B1111;
+  --color-crimson-light: #B22222;
+
+  /* DCP Green */
+  --color-green: #2E7D32;
+  --color-green-light: #4CAF50;
+  --color-green-dark: #1B5E20;
+
+  /* Orange label */
+  --color-orange: #E65100;
+
+  /* Neutrals */
+  --color-charcoal: #1C1C1E;
+  --color-offwhite: #FAFAF8;
+  --color-muted: #6B7280;
+  --color-border: #E5E0D8;
+
+  /* Poppins for headings — bold, clean, geometric (matches DCP website) */
+  --font-display: var(--font-display), "Poppins", system-ui, sans-serif;
+
+  /* Nunito Sans for body text */
+  --font-body: var(--font-body), "Nunito Sans", system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FAFAF8;
+  color: rgb(82, 82, 82);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 29px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings — Poppins bold */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+/* Focus rings for accessibility */
+*:focus-visible {
+  outline: 2px solid #2E7D32;
+  outline-offset: 2px;
 }
