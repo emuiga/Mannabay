@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
@@ -11,8 +10,8 @@ export default function About() {
         <AnimatedSection>
           <div className="relative h-[480px] w-full">
             <Image
-              src="/images/mary-community.jpg"
-              alt="Hon. Mary Justus Mannabay engaging with the Bahati community"
+              src="/images/mary-about.jpg"
+              alt="Hon. Mary Justus Mannabay"
               fill
               className="object-cover object-center"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -29,38 +28,26 @@ export default function About() {
           <div className="space-y-4 mb-8">
             <p className="font-body text-gray-700 text-base leading-7">
               Mary Justus Mannabay is a grassroots leader, founder of the MannaBay
-              Foundation, and an unwavering servant of the people of Bahati, Nakuru
-              County. Her leadership is defined not by words, but by presence — showing
-              up for families in their most vulnerable moments.
+              Foundation, and a servant of the people of Bahati, Nakuru County.
+              Her leadership is defined not by words, but by presence.
             </p>
             <p className="font-body text-gray-700 text-base leading-7">
-              Guided by DCP&apos;s philosophy &quot;Skiza Wakenya&quot; (Listen to Kenyans), Mary
+              Guided by DCP&apos;s philosophy &quot;Skiza Wakenya&quot; (Listen to Kenyans), she
               believes every citizen of Bahati deserves to be heard, respected, and
-              uplifted. From expanding clean water access, uplifting schools, and
-              improving healthcare — she has already been doing the work before the
-              ballot.
+              uplifted. She has already been doing the work before the ballot.
             </p>
             <p className="font-body text-gray-700 text-base leading-7">
-              Her work is rooted in the conviction that leadership is service. Through
-              the MannaBay Foundation, she empowers the youth through sports, education,
-              music mentorship, and agricultural programmes — building a stronger
-              tomorrow for Bahati&apos;s young people today.
+              Through the MannaBay Foundation, she empowers youth through sports,
+              education, music mentorship, and agricultural programmes.
             </p>
           </div>
 
           {/* Quote block */}
-          <blockquote className="border-l-4 border-green pl-5 py-2 mb-8">
+          <blockquote className="border-l-4 border-green pl-5 py-2">
             <p className="font-display font-bold text-charcoal text-xl italic leading-snug">
-              &ldquo;This is not charity — it is a duty.&rdquo;
+              &ldquo;This is not charity. It is a duty.&rdquo;
             </p>
           </blockquote>
-
-          <Link
-            href="/about"
-            className="font-body text-sm font-medium text-green uppercase tracking-wider hover:text-green-dark transition-colors"
-          >
-            Read Her Full Story →
-          </Link>
         </AnimatedSection>
       </div>
     </section>

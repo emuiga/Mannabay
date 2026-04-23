@@ -11,27 +11,50 @@ export const metadata: Metadata = {
 
 const programs = [
   {
-    icon: '⚽',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 2a10 10 0 0 1 7.39 16.64M12 2a10 10 0 0 0-7.39 16.64M8.56 20.84A10 10 0 0 0 12 22a10 10 0 0 0 3.44-.84M12 7v5l3 3"/>
+      </svg>
+    ),
     title: 'Scoring Against Poverty',
-    desc: 'A football tournament programme that uses sport to engage and mentor youth, keeping them off the streets and building discipline, teamwork, and resilience.',
+    desc: 'A football tournament programme that uses sport to engage and mentor youth, building discipline, teamwork, and resilience across Bahati wards.',
     impact: 'Hundreds of young men engaged annually across Bahati wards',
   },
   {
-    icon: '🌾',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 1 0 20"/>
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10"/>
+        <path d="M2 12h20M12 2v20"/>
+        <path d="M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/>
+      </svg>
+    ),
     title: 'Agricultural Education',
-    desc: 'Hands-on training in modern farming techniques, soil management, and agribusiness — equipping youth with practical skills to feed themselves and earn a livelihood.',
+    desc: 'Hands-on training in modern farming techniques, soil management, and agribusiness, equipping youth with practical skills for sustainable livelihoods.',
     impact: 'Smallholder farmers and youth trained in sustainable agriculture',
   },
   {
-    icon: '🎵',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M9 18V5l12-2v13"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="18" cy="16" r="3"/>
+      </svg>
+    ),
     title: 'Music Mentorship',
-    desc: 'Connecting musically gifted youth with professional mentors to develop their talent into a career pathway — recording sessions, performance opportunities, and music business education.',
+    desc: 'Connecting musically gifted youth with professional mentors, offering recording sessions, performance opportunities, and music business education.',
     impact: 'Young artists given a platform and a future in music',
   },
   {
-    icon: '📚',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+    ),
     title: 'EHOH Education Support',
-    desc: 'Tuition assistance and school-access support for underprivileged learners — covering fees, stationery, and exam costs so no child drops out for financial reasons.',
+    desc: 'Tuition assistance and school-access support for underprivileged learners, covering fees, stationery, and exam costs so no child drops out for financial reasons.',
     impact: 'Learners supported across Bahati primary and secondary schools',
   },
 ]
@@ -140,7 +163,7 @@ export default function FoundationPage() {
             {programs.map((prog, i) => (
               <AnimatedSection key={prog.title} delay={i * 0.1}>
                 <div className="bg-white border border-border p-8 h-full">
-                  <div className="text-4xl mb-4">{prog.icon}</div>
+                  <div className="text-green mb-4">{prog.icon}</div>
                   <h3 className="font-display font-bold text-charcoal text-xl mb-3">
                     {prog.title}
                   </h3>
@@ -203,25 +226,17 @@ export default function FoundationPage() {
                 deserve better.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 font-body text-base">
-                <a
-                  href="tel:+254769813793"
-                  className="text-charcoal hover:text-crimson transition-colors"
-                >
-                  📞 +254 769 813793
+                <a href="tel:+254769813793" className="flex items-center gap-2 text-charcoal hover:text-crimson transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.58a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  +254 769 813793
                 </a>
-                <a
-                  href="mailto:mannabayfoundation@gmail.com"
-                  className="text-charcoal hover:text-crimson transition-colors"
-                >
-                  ✉️ mannabayfoundation@gmail.com
+                <a href="mailto:mannabayfoundation@gmail.com" className="flex items-center gap-2 text-charcoal hover:text-crimson transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  mannabayfoundation@gmail.com
                 </a>
-                <a
-                  href="https://www.facebook.com/p/MannaBay-Foundation-61552045125695/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-charcoal hover:text-crimson transition-colors"
-                >
-                  📘 Facebook
+                <a href="https://www.facebook.com/p/MannaBay-Foundation-61552045125695/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-charcoal hover:text-crimson transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  Facebook
                 </a>
               </div>
             </div>

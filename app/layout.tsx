@@ -4,7 +4,6 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import './globals.css'
 
-// Poppins — headings (bold, clean geometric sans-serif — matches DCP website style)
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-display',
@@ -12,7 +11,6 @@ const poppins = Poppins({
   display: 'swap',
 })
 
-// Nunito Sans — body text
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
   variable: '--font-body',
@@ -32,6 +30,17 @@ export const metadata: Metadata = {
     'Nakuru County',
     'Bahati Constituency',
   ],
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    other: [
+      { rel: 'manifest', url: '/site.webmanifest' },
+    ],
+  },
   openGraph: {
     title: 'Hon. Mary Justus Mannabay – Bahati MP 2027',
     description:

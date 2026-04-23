@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
@@ -11,22 +12,19 @@ export default function JoinCTA() {
             <h2 className="font-display font-bold text-crimson text-5xl md:text-6xl leading-tight mb-5">
               Be Part of the Movement.
             </h2>
-            <p className="font-body text-gray-600 text-base leading-7 mb-10">
-              The future of Bahati is built together. Whether you register, volunteer,
-              or simply spread the word — every action counts. Join thousands of
-              Bahati residents who believe in servant leadership and real change for
-              2027.
+            <p className="font-body text-gray-600 leading-relaxed mb-10">
+              The future of Bahati is built together. Whether you volunteer, spread
+              the word, or simply show up — every action counts. Join Bahati residents
+              who believe in servant leadership and real change for 2027.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="https://oyaapp.com/dcpkenya/how-to-become-a-dcp-member/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="bg-green text-white font-body font-medium uppercase tracking-wider text-sm px-8 py-3.5 hover:bg-green-dark transition-colors duration-200"
               >
-                Register with DCP
-              </a>
+                Volunteer with Us
+              </Link>
               <a
                 href="https://www.facebook.com/p/Hon-Mary-Justus-Mannabay-100072017820551/"
                 target="_blank"

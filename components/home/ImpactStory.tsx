@@ -23,8 +23,8 @@ export default function ImpactStory() {
             <p className="font-body text-gray-300 text-base leading-7 mb-10 max-w-2xl mx-auto">
               When a Kiamaina family in Bahati could not afford to retrieve their
               son&apos;s body from a Nyahururu mortuary after 94 days, Mary Justus
-              Mannabay stepped in — paying the KSh 80,000 mortuary bill, providing a
-              coffin, hearse, and post-mortem fees. She did not wait to be asked.
+              Mannabay stepped in. She paid the KSh 80,000 mortuary bill, provided a
+              coffin, hearse, and post-mortem fees, without being asked.
               This is what servant leadership looks like.
             </p>
 

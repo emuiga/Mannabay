@@ -1,0 +1,11 @@
+{
+  "name": "Hon. Mary Justus Mannabay – Bahati MP 2027",
+  "short_name": "Mannabay 2027",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#2E7D32",
+  "background_color": "#FAFAF8",
+  "display": "standalone"
+}

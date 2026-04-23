@@ -73,14 +73,12 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://oyaapp.com/dcpkenya/how-to-become-a-dcp-member/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="bg-green text-white font-body font-medium text-xs px-5 py-2.5 hover:bg-green-dark transition-colors duration-200 uppercase tracking-wider"
           >
-            Register
-          </a>
+            Get Involved
+          </Link>
         </nav>
 
         {/* Mobile hamburger */}
@@ -116,14 +114,12 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://oyaapp.com/dcpkenya/how-to-become-a-dcp-member/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="bg-green text-white font-body font-medium text-sm px-5 py-3 text-center uppercase tracking-wider"
             >
-              Register with DCP
-            </a>
+              Get Involved
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
